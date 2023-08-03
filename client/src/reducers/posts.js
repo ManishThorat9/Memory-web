@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 import { FETCH_ALL, CREATE, UPDATE, DELETE, LIKE } from '../constants/actionTypes';
 
-export default (posts = [], action) => {
+let return_llamda = (posts = [], action) => {
   let ret;
   switch (action.type) {
     case FETCH_ALL:
@@ -24,3 +24,5 @@ export default (posts = [], action) => {
   }
   return ret;
 };
+
+export default return_llamda; 
